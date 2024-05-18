@@ -1,0 +1,52 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+.container
+{
+    display: grid;
+    height: 100vh;  
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+/* Start of Header */
+
+.header
+{
+    background-color: wheat;
+}
+
+
+/* Start of Body*/
+.body
+{
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    text-align: center;
+    width: 700px;
+    height: 700px;  
+}
+
+.square
+{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid black; 
+}
+
+.square:hover
+{
+    background-color: aqua;
+}
+
+/* Start of Footer*/
+.footer
+{
+    background-color: bisque;
+}
