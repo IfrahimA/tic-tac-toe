@@ -1,3 +1,4 @@
+/* Text Imports */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @media (min-width: 768px) {
     .button-50 {
@@ -12,17 +13,17 @@
     padding: 0; 
 }
 
+
+/* Container Styles */
 .container
 {
     display: grid;
     height: 100vh;  
     grid-template-rows: 1fr 3fr 1fr;
-
     background-color: white;
 }
 
 /* Start of Header */
-
 .header
 {
     display: flex; 
@@ -53,11 +54,11 @@
     outline: 5px solid #FFEB3B; 
 }
 
-
 .header .title
 {
     font-family: "Pixelify Sans", sans-serif;
 }
+/* End of Header*/
 
 
 /* Start of Body*/
@@ -92,6 +93,7 @@
     font-weight: 100; 
     font-family: "Pixelify Sans", sans-serif;
 }
+/* End of Body */
 
 /* Start of Footer*/
 .footer
@@ -109,8 +111,9 @@
 {
     text-align: center;
 }
+/* End of Footer */
 
-/* Modal */
+/* Start of Modal */
 .modal
 {
     outline: 5px solid black;
@@ -163,8 +166,10 @@
     gap: 25px;
 }
 
+/* End of Modal */
 
-/* Misalleanous */
+
+/* Miscellaneous */
 .active 
 {
     display: block; 
