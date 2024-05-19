@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
+}
 
 *
 {
@@ -11,14 +16,46 @@
 {
     display: grid;
     height: 100vh;  
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    background-color: white;
 }
 
 /* Start of Header */
 
 .header
 {
-    background-color: wheat;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 800; 
+    font-size: 50px; 
+}
+
+.header button
+{
+    outline: none; 
+    border: none; 
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 800; 
+    font-size: 40px; 
+}
+
+.header button:hover
+{
+    outline: 5px solid #FFEB3B; 
+}
+
+
+.header .title
+{
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 
@@ -30,8 +67,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-self: center;
     text-align: center;
-    width: 700px;
-    height: 700px;  
+    width: 500px;
+    height: 500px;
+    margin: 10px; 
 }
 
 .square
@@ -39,18 +77,24 @@
     display: flex; 
     align-items: center;
     justify-content: center;
-    outline: 1px solid black; 
+    outline: 5px solid #FFEB3B; 
 }
 
 .square:hover
 {
-    background-color: aqua;
+    background-color: rgba(235, 236, 176, 0.603);
+}
+
+.square-x
+{
+    font-size: 100px; 
+    font-weight: 100; 
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 /* Start of Footer*/
 .footer
 {
-    background-color: bisque;
     display: flex; 
     justify-content: center;
     align-items: center;

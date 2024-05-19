@@ -35,6 +35,7 @@ const playRound = () => {
                 {
                     currentPlayer = (currentPlayer == "O") ? "X" : "O"; 
                     e.textContent = currentPlayer;
+                    e.classList.add("square-x")
 
                     //Sets the board with the position and player
                     board.setBoard(e.id - 1, currentPlayer);
