@@ -49,6 +49,7 @@
 
 .header button:hover
 {
+    background-color: #FFEE58;
     outline: 5px solid #FFEB3B; 
 }
 
@@ -62,14 +63,14 @@
 /* Start of Body*/
 .body
 {
-    display: grid; 
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-self: center;
     text-align: center;
     width: 500px;
     height: 500px;
-    margin: 10px; 
+    margin: 10px;
 }
 
 .square
@@ -95,7 +96,7 @@
 /* Start of Footer*/
 .footer
 {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px; 
@@ -107,4 +108,68 @@
 .footer-text
 {
     text-align: center;
+}
+
+/* Modal */
+.modal
+{
+    outline: 5px solid black;
+    position: absolute;
+    font-family: "Pixelify Sans", sans-serif;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; 
+    font-size: 25px; 
+    font-weight: 500;
+
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.modal-title
+{
+    text-align: center;
+}
+
+.modal button
+{
+    outline: none; 
+    border: none; 
+    background-color: transparent;
+    border-radius: 5px; 
+    width: 60px; 
+    height: 30px;
+    outline: 5px solid #FFEB3B;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;  
+}
+.modal button:hover
+{
+    background-color: #FFEE58;
+}
+
+.modal-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+/* Misalleanous */
+.active 
+{
+    display: block; 
+}
+.not-active
+{
+    display: none; 
 }
