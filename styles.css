@@ -31,8 +31,8 @@
     align-items: center;
     gap: 50px;
     font-family: "Pixelify Sans", sans-serif;
-    font-weight: 800; 
-    font-size: 50px; 
+    font-size: 75px;
+    font-weight: 800;
 }
 
 .header button
@@ -45,18 +45,13 @@
     border-radius: 5px;
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 800; 
-    font-size: 40px; 
+    font-size: 40px;
 }
 
 .header button:hover
 {
-    background-color: #FFEE58;
-    outline: 5px solid #FFEB3B; 
-}
-
-.header .title
-{
-    font-family: "Pixelify Sans", sans-serif;
+    background-color: #ffee58b7;
+    outline: 1px solid black;
 }
 /* End of Header*/
 
@@ -122,12 +117,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 500px;
     height: 300px;
     border-radius: 10px; 
-    font-size: 25px; 
-    font-weight: 500;
-
     display: grid; 
     grid-template-rows: 1fr 1fr;
     align-items: center;
@@ -137,6 +129,8 @@
 
 .modal-title
 {
+    font-size: 50px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -147,15 +141,18 @@
     background-color: transparent;
     border-radius: 5px; 
     width: 60px; 
-    height: 30px;
-    outline: 5px solid #FFEB3B;
+    height: 40px;
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;  
 }
 .modal button:hover
 {
     background-color: #FFEE58;
+    outline: 1px solid black;
+    transition: 0.5;
+    font-size: 30px; 
+    width: 80px; 
 }
 
 .modal-button
