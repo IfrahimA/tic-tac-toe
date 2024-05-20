@@ -173,9 +173,11 @@ function readyToPlay() {
     const header = document.querySelector('.header');
     const body = document.querySelector('.body');
     const footer = document.querySelector('.footer');
+    const gif = document.getElementById("gif"); 
 
     yesBtn.addEventListener('click', () => {
         header.textContent = "Lets Play! X's Turn";
+        gif.classList.add('not-active'); 
         body.classList.remove('not-active');
         footer.classList.remove('not-active');
     });
